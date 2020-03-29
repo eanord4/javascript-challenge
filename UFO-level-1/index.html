@@ -24,20 +24,6 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <a class="navbar-brand text-light" href="index.html"><i>UFO Sightings</i></a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <font color="00ff00">Dropdown link</font>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
     </nav>
 
     <div class="my-4"></div>
@@ -46,9 +32,17 @@
         <div class="container">
             <div class="card border-dark">
                 <div class="card-header bg-dark">
-                    <h1><font color="00ff00">The Table!</font></h1>
+
+                    <h1>The Table!</h1>
+
+                    <!-- select to display filtering summary -->
+                    <i><h7 id="filter-num"></h7></i>
+
                 </div>
                 <div class="card-body" style="background-color: black;">
+
+                    <!-- this is the button -->
+                    <button id="filter-btn" class="jumbotron py-0 mb-1">Filter</button>
 
                     <!-- this is the table -->
                     <table id="filtered-table">
@@ -61,12 +55,13 @@
         </div>
     </center>
 
-<!-- my scripts -->
+<!-- data -->
 <script src="../starter-files/Instructions/StarterCode/static/js/data.js"></script>
+
+<!-- my scripts -->
 <script src="app.js"></script>
 
 </div>
-
 </body>
 
 </html>

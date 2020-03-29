@@ -26,7 +26,7 @@ const setUpHeaders = () => {
             .classed("form-control", true)
             .attr("id", key)
             .attr("type", "text")
-            .attr("placeholder", "Enter regex")
+            .attr("placeholder", "regex")
     })
 }
 
